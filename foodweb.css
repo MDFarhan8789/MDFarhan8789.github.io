@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    height: 40%;
+    width: 30%;
+    border-radius: 25px;
+}
+html,
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.info,.foryou,.linebreak,.ouritems{
+    background-color: rgb(251, 251, 232);
+}
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    background-color: gainsboro;
+    margin-bottom: 30px;
+    padding: 10px;
+    z-index: 15;
+}
+/*Navigation Bar*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bar-icon{
+    font-size: 35px;
+}
+/*info section*/
+.info{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.info-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.tag{
+    background-color: rgb(7, 214, 114);
+    padding: 5px 15px;
+    color: rgb(224, 235, 245);
+    align-self: flex-start;
+    border-radius: 5px;
+}
+.info-content h1{
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 900;
+}
+.info-content h2{
+    font-size: 50px;
+    line-height: 0.9;
+    font-weight: 300;
+}
+button{
+    padding: 10px 15px;
+    border: none;
+    transition: 0.1s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.1s ease-in-out;
+}
+.know-more{
+    background-color: rgb(234, 134, 97);
+    align-self: center;
+}
+.disc{
+    height: 40%;
+    width: 40%;
+}
+.health{
+    height: 40%;
+    width: 40%;
+}
+.delivery{
+    height: 50%;
+    width: 50%;
+}
+.foryou{
+    margin-top: 100px;
+    margin-bottom: 80px;
+    padding: 25px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+.foryou img{
+    width:72px;
+}
+.specifications{
+    display: flex;
+    gap: 20px;
+}
+.specifications:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+.linebreak{
+    border: 1px solid grey;
+    margin: 20px 0;
+}
+/*our foods section*/
+.ouritems{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 45px 0;
+    justify-content: center;
+    align-items: center;
+}
+.ouritems .tag{
+    align-self: center;
+}
+.grid{
+    display: grid;
+    gap: 13px;
+    grid-template-areas:"I1 I2 I2 I4" 
+    "I1 I3 I3 I4"
+    "I5 I3 I3 I4";
+}
+
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.img{
+    border: 15px;
+    border-radius: 8px;
+    width: 90%;
+    height: 90%;
+}
+.img:hover{
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+.grid{
+    padding: 15px;
+}
+.logo2{
+    height: 33%;
+    width: 13%;
+    border-radius: 25px;
+}
+/*footer*/
+footer{
+    background-color: gray;
+}
+.footer-container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:786px){
+    .info{
+        flex-direction: column;
+    }
+    .info-img{
+        width: 90%;
+    }
+    .info-img{
+        display: flex;
+        justify-content: center;
+    }
+    .info-content{
+        gap: 15px;
+        padding: 5px 13px;
+    }
+    .info-content h1{
+        font-size: 32px;
+        
+    }
+    .foryou{
+        flex-direction: column;
+    }
+}
